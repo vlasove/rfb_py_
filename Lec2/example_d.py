@@ -15,5 +15,5 @@ print(first_person_name, second_person_name, "Alex", 100500)
 drink = "Water"
 dish = "Broccoli"
 message = f"I'm Bob, and I like '{drink}' and {dish}" # Работает только с 3.7 и выше
-# message = "I'm Bob, and I like {}".format(drink) Работает и в старых версиях
+# message = "I'm Bob, and I like {} and {}".format(drink, dish) #Работает и в старых версиях
 print(message)
