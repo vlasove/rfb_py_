@@ -17,3 +17,22 @@ print("I am uber programmer!")
 ```
 
 * Каждый print() выводит информация на отдельной строке потому что по умолчанию, после вывода своего аргумента `print()` допишет вам `\n`
+
+* Вывод нескольких значений в одной команде:
+```
+first_person_name = "Bob"
+second_person_name = "Alice"
+
+print(first_person_name, second_person_name, "Alex", 100500)
+```
+* При передаче аргументов команде `print()` значения располагаются в выходном потоке , разделенные (по умолчанию) пробелом!
+
+* Иногда помогает форматирование строки перед выводом в STDOUT:
+```
+# 3. Форматированный вывод (форматирование строк или f-strings)
+drink = "Water"
+dish = "Broccoli"
+message = f"I'm Bob, and I like '{drink}' and {dish}" # Работает только с 3.7 и выше
+# message = "I'm Bob, and I like {}".format(drink) Работает и в старых версиях
+print(message)
+```
