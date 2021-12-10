@@ -75,3 +75,17 @@ if abs(point) <= 25: # |point| <= 25
 else:
     print("Точка отрезку не принадлежит!")
 ```
+
+### 4. Условный оператор с множественным выбором
+```
+a_int = int(input())
+b_int = int(input())
+sign = input()
+
+if sign == "+":
+    print(a_int + b_int)
+elif sign == "-":
+    print(a_int - b_int)
+else:
+    print("Данный функционал не поддерживается")
+```
