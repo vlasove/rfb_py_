@@ -117,3 +117,50 @@ len_of_name = len(name_str * 2)
 print("Len:", len_of_name)
 ```
 
+### 4. Логический тип
+```
+# Логический тип bool
+a_bool = True
+b_bool = False
+
+# Логические операции
+print("a_bool AND b_bool:", a_bool and b_bool)
+print("a_bool OR b_bool:", a_bool or b_bool)
+print("not a_bool:", not a_bool)
+```
+
+* Неявное приведение в арифметических выражениях:
+```
+print(a_bool + a_bool ** b_bool) # Арифметическая операция!
+```
+
+
+### 5. NoneType
+```
+# NoneType - тип "без значения"
+a_none = None
+print("Type:", type(a_none))
+```
+
+
+### 6. Резюме
+* 1) Все 5 базовых типов - ЭТО НЕИЗМЕНЯЕМЫЕ ТИПЫ!!!!!!!!!!!!
+```
+numeric = 10 # У этой переменной есть - тип, имя, значение, адрес
+             # int, numeric, 10, xf00xf
+numeric = numeric + 1
+             # int, numeric, 11, adfxo0sxf
+             # SHADOWING - затенение (присваивание новой ссылки старому имени)
+
+
+name = "Bobby"
+name = name + " " + "Johnson"
+```
+* 2) Язык с динамический типизацией!!
+```
+# Динамическая типизация - тип переменной может быть изменен входе выоплнения программы!
+value = 10
+value = "Vasya"
+```
+
+* 3) Неявные приведения - следствие поддержки динамической типизации!
