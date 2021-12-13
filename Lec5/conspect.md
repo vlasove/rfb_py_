@@ -79,4 +79,16 @@ print("Current min:", CURRENT_MIN)
 ```
 
 ### 2. Синтаксис for
+```
+for expression:
+    body
+```
 
+* Пример:
+```
+for i in range(0, 10, 1):
+    print("Current i:", i)
+
+```
+
+* Генератор `range(start, stop, step)` - принимает только `int` (даже приводимые к `int` вещественные значения не являются корретными для `range()`)
