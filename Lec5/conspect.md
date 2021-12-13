@@ -42,5 +42,41 @@ while True:
 print("Out of while body")
 ```
 
+### 1.3 while для разных задачек
+* while с внешним счетчиком
+```
+count = 0
+
+while True:
+    numeric = int(input())
+    if numeric < 0:
+        break
+
+    if numeric % 2 ==0:
+        count += 1
+
+print("Count is:", count)
+```
+
+* while для подсчета неэффективного min/max
+```
+CURRENT_MAX = -1000000
+CURRENT_MIN = 10 ** 10
+
+while True:
+    numeric = int(input())
+    if numeric < 0:
+        break
+
+    if numeric > CURRENT_MAX:
+        CURRENT_MAX = numeric
+
+    if numeric < CURRENT_MIN:
+        CURRENT_MIN = numeric
+
+print("Current max:", CURRENT_MAX)
+print("Current min:", CURRENT_MIN)
+```
+
 ### 2. Синтаксис for
 
