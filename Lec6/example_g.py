@@ -15,5 +15,5 @@ while True:
         break
     from_park_to_home.add(message)
 
-result = ....
+result = from_home_to_park.intersection(from_park_to_home)
 print(len(result))
