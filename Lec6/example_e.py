@@ -3,7 +3,7 @@
 n = int(input())
 words = set()
 
-for i in range(n):
+for _ in range(n):
     word = input()
     words.add(word)
 
