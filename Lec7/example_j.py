@@ -1,0 +1,1 @@
+message = input().strip() # "Вася\n".strip() -> "Вася"
