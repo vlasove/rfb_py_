@@ -30,5 +30,5 @@ for elem in num_tuple:
 
 
 # Распаковка кортежа (tuple unpack)
-x, y, z = 1, 2, 3
+x, y, z = 1, "Bob", True
 print("X:", x, "Y:", y, "Z:", z)
