@@ -57,3 +57,44 @@ print(sectors[(0,0)])
 bag = {10 : "a", 10.5:"b", True: "c", None : "d", "sting" : "e", (10, 10) : "f"}
 print(bag)
 ```
+
+### 2. Обработка словарей
+```
+# Обработка словарей
+words = {"one" : "один" , "two" : "два", "three" : "три", "four" : "четыре"}
+
+# Количество пар (количество элементов) == количество ключей
+print("Len:", len(words))
+
+# Проверка вхождения
+msg = "one"
+if msg in words.keys(): # Есть ли msg в ключах словаря?
+    print(f"{msg} in words")
+    print(words.keys())
+
+val = "один"
+if val in words.values():
+    print(f"{val} in words.values")
+    print(words.values())
+
+# Итерирование по ключам
+for key in words.keys():
+    print("Key:", key, "Value:", words[key])
+
+# Итерирование по значениям
+for val in words.values():
+    print("Value:", val)
+
+
+# Итерирование по парам
+for key, value in words.items():
+    print("Key:", key, "Value:", value)
+```
+
+* По умолчанию все операции проводятся над ключами (т.е. проверка вхождения `in`, итерирование через `for` и т.д.)
+* Рекомендуется явно использовать методы обработки словарей, такие как:
+    * `dict.keys()` - возвращает набор ключей
+    * `dict.values()` - возвращает набор значений
+    * `dict.items()` - возвращает набор пар (каждая пара - кортеж (key, val)).
+
+### 3. Методы словарей
