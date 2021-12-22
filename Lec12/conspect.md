@@ -98,3 +98,66 @@ for key, value in words.items():
     * `dict.items()` - возвращает набор пар (каждая пара - кортеж (key, val)).
 
 ### 3. Методы словарей
+```
+# Методы словарей
+words = {"one" : "один" , "two" : "два", "three" : "три", "four" : "четыре"}
+
+my_personal_key = "one"
+
+if my_personal_key in words:
+    print(f"Key: {my_personal_key} Val:{words[my_personal_key]}")
+else:
+    print(None)
+
+
+# Метод .get()
+value = words.get(my_personal_key)
+print(".get():", value)
+
+# Метод .get() с значением по умолчанию
+birthdays = {"jan" : 0, "feb" : 5, "mar" : 3}
+month = "dec"
+print(birthdays.get(month, 0))
+
+# Удаление пар из словаря
+words = {"one" : "один" , "two" : "два", "three" : "три", "four" : "четыре"}
+del words["two"]
+print(words)
+
+val = words.pop("one")
+print(words)
+print("Deleted one:", val)
+```
+
+### 4. Смешивание словарей с другими коллекциями
+```
+# На вход программе поступает n - информация про друзей
+# Про каждого друга известно "Имя Месяц" (где имя - имя друга, месяц - это месяц когда он родился)
+# Задача - сохранить друзей удобным для обработки образом
+
+# С прединициализированным словарем
+birthdays = {
+    "янв" : [],
+    "фев" : [],
+    "мар" : [],
+    "апр" : [],
+    "май" : [],
+    "июн" : [],
+    "июл" : [],
+    "авг" : [],
+    "сен" : [],
+    "окт" : [],
+    "ноя" : [],
+    "дек" : [],
+}
+
+n = int(input().strip())
+for _ in range(n):
+    friend_info = input().strip() # "Петя фев"
+    name, month = friend_info.split(sep=" ")
+    birthdays[month].append(name)
+
+for month, names in birthdays.items():
+    names_str = ', '.join(names)
+    print(f"Month:{month} and birthdays at: {names_str}")
+```
