@@ -17,5 +17,7 @@ def build_map(key: str = "key", value: int = 10) -> Dict[str, int]:
     """
     return {key: value}
 
+def something(*args:int, **kwargs:Dict[str, int]):
+    pass
 
 build_map()
