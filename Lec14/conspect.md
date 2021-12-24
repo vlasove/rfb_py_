@@ -60,3 +60,41 @@ def sqrt_differnce(a, b, c = 1, d = 1):
 print(sqrt_differnce(2,3,4,5))
 print(sqrt_differnce(5,5))
 ```
+
+### 3. Variadic аргументы
+* Континуальные аргументы. Бывают двух типов - приводимые в кортеж и приводимые в словарь
+* Континуальный аргумент (приводимый к кортежу):
+```
+def add(*args):
+    res = 0
+    for arg in args:
+        if arg % 2 == 0:
+            res += arg**2
+        else:
+            res += arg**3
+    return res
+
+```
+* При вызове функции `add` все переданные ей аргументы будут сложены в кортеж с именем `args`.
+* Имя `args` - не стандартное (можно выбрать любое), но это договоренность между разработчиками `Python`
+
+* Континуальный аргумент (приводимый к словарю)
+```
+def build_map(**kwargs):
+    """
+    kwargs - key-word args
+    """
+    print("Len:", len(kwargs))
+    print("Type:", type(kwargs))
+    print("Value:", kwargs)
+```
+
+* При вызове функции `build_map` передаем набор пар (key_word_name = arg, ....). После чего все пары будут представлены в словаре `kwargs = {"key_word_name" : arg, }`.
+
+* Смешивание континуальных аругментов
+```
+def mutant(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+```
