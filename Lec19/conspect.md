@@ -23,3 +23,7 @@ set HTTPS_PROXY=https://username:password@proxy:port
 и выполняете
 pip install <package_name>
 ```
+
+### 1. Забор пакетов из внутреннего хранилища
+* `JFrog` - хранилище `python` пакетов (локальное), откуда также можно брать пакеты как общие , так и кастомные. (Инстуркция по работе с `JFrog` находилась на `Confluence`).
+* Инструкция : https://confluence.raiffeisen.ru/pages/viewpage.action?pageId=221850837
