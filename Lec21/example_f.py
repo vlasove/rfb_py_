@@ -17,5 +17,7 @@ def main():
         print("Happend:", z_err)
         print("Danger should used non 0 aruments!")
 
+    print("Done!")
+
 if __name__ == '__main__':
     main()

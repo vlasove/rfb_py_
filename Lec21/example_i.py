@@ -6,7 +6,6 @@ def danger(n:int) -> float:
     """
     return 1 / n
 
-
 def main():
     """
     Основная точка входа в приложение
@@ -29,6 +28,8 @@ def main():
         print("Another exception")
     else:
         print("Hooorayy!")
+    finally:
+        print("Hoorraayy2!!")
 
 if __name__ == '__main__':
     main()
